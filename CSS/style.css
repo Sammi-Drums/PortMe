@@ -11,9 +11,12 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+    /* background-image: url(../Images/Sammi-removebg-preview.png); */
     background-image: url(../Images/Sammi.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: right;
 }
 
 .container{
