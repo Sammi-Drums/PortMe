@@ -89,7 +89,21 @@ nav ul li a:hover::after{
 .about-col-2{
  flex-basis: 60%
 }
-
+.title{
+    font-size: 60px;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
 
 
 
