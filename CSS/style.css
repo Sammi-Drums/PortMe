@@ -4,21 +4,35 @@
     box-sizing: border-box;
     font-family: 'poppings' sans-serif;
 }
+/* * {
+    outline: 2px solid red;
+} */
+
 body{
     background: black;
     color: white;
+    width: 100vw;
+    max-width: 100%;
 }
 #header{
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-image: url(../Images/Sammi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .container{
     padding: 10px 10%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 nav{
@@ -26,11 +40,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .logo{
     width: 140px;
 }
-
+nav ul{
+    max-width: 100%;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -140,7 +157,7 @@ nav ul li a:hover::after{
 }
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 40px;
     margin-top: 10px;
 }
@@ -399,6 +416,7 @@ nav .fas{
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        text-align: center;
     }
     .about-col-1{
         margin-bottom: 30;
