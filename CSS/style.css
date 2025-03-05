@@ -416,7 +416,7 @@ nav .fas{
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
-        text-align: center;
+        
     }
     .about-col-1{
         margin-bottom: 30;
