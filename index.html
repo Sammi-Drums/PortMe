@@ -213,7 +213,7 @@
                 <a href="Images/Akia Samuel Chah CV.pdf" download class="bn">Download CV</a>
             </div>
             <div class="contact-right">
-                <form action="">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
@@ -231,9 +231,17 @@
 
 
 </body>
-<script>
-    
-</script>
 <script src="JavaScript/main.js"></script>
 <script src="JavaScript/dark.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwo9AT44VGu8CuvEGqEpVY9zfFl_t1Rcp8ScKubsgIsWAma_0BOyr7owMa4tyXJKnLk/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </html>
