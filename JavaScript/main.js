@@ -2,7 +2,7 @@
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
-var sidemenu = document.getElementById("sidemenu");
+
 
 
     function opentab(tabname){
@@ -15,7 +15,8 @@ var sidemenu = document.getElementById("sidemenu");
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-
+// For the toggling of the mobile menue
+var sidemenu = document.getElementById("sidemenu");
 function openmenu(){
     sidemenu.style.right = "0";
 }
