@@ -428,6 +428,9 @@ nav .fas{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #header img{
+        /* width: 100%; */
+    }
     .header-text{
         margin-top: 40%;
         font-size: 26px;
@@ -439,14 +442,19 @@ nav .fas{
         display: block;
         font-size: 25px;
     }
+    .toggle-button{
+        margin-left: 25px;
+    }
     nav ul{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: 0px;
         width: 200px;
-        height: 300px;
+        height: 400px;
         padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;

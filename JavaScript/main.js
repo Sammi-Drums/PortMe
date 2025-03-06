@@ -16,12 +16,12 @@ var tabcontents = document.getElementsByClassName("tab-contents");
         document.getElementById(tabname).classList.add("active-tab");
     }
 // For the toggling of the mobile menue
-var sidemenu = document.getElementById("sidemenu");
+var sidemen = document.getElementById("sidemenu");
 function openmenu(){
-    sidemenu.style.right = "0";
+    sidemen.style.right = "0";
 }
 function closemenu(){
-    sidemenu.style.right = "-200px";
+    sidemen.style.right = "-200px";
 }
 
 
