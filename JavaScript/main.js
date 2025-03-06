@@ -14,4 +14,10 @@ var tabcontents = document.getElementsByClassName("tab-contents");
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-    document.getElementById('spinner').style.display = 'none';
+
+
+
+
+
+
+    
