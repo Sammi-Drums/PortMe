@@ -1,0 +1,176 @@
+/* style.css (Updated for dark mode, 3D images, and hover effects) */
+
+/* Dark Mode Styles */
+/* body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.5s ease-in-out;
+} */
+
+/* 3D Image Styles */
+/* .image-container {
+    perspective: 1000px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.image-container .image-front,
+.image-container .image-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-container .image-front {
+    transform: rotateY(0deg);
+}
+
+.image-container .image-back {
+    transform: rotateY(180deg);
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.image-container:hover .image-front {
+    transform: rotateY(-180deg);
+}
+
+.image-container:hover .image-back {
+    transform: rotateY(0deg);
+} */
+
+/* Social Media Icons */
+/* .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #1DA1F2; /* Example Twitter blue 
+}*/
+
+
+/* Dark mode styles */
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode #dark-mode-toggle {
+    background: #fff;
+    color: #111;
+}
+
+/* 3D Flip Card Styles */
+.card {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Front (Image) */
+.card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* 3D effect when hovering */
+.card:hover .card-front img {
+    transform: scale(1.1);
+}
+
+/* Back (Social Media Links) */
+.card-back {
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.card-back h3 {
+    margin-bottom: 10px;
+}
+
+.card-back a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.card-back i {
+    font-size: 24px;
+    margin-right: 8px;
+}
